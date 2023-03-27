@@ -11,3 +11,4 @@ mm, mxx, myy = m/(1/2*rho*(l**2)*d), mx/(1/2*rho*(l**2)*d), my/(1/2*rho*(l**2)*d
 jzz = jz/(1/2*rho*(l**4)*d)
 
 #print(mx,my,jz,mm,mxx,myy,jzz)
+# kjflzsjfdlkzjflkzsdjf
