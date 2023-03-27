@@ -1,7 +1,10 @@
 from hydrodynamic_derrivative import *
 
-if __name__ == '__main__':
+U= 1; rr= 1; beta= 1; r= rr*U/L
+
+def hull(var):
     XH= Xvv*pow(U,2) + Xvr*U*r + Xrr*pow(r,2) + Xvvvv*pow(U,4)
-    YH= YB*beta+Yr*r+YBB*beta*abs(beta)+Yrr*r*abs(r)+(YBBr*beta+Ybrr*r)*beta*r
-    NH= NB*beta+Nr*r+NBB*beta*abs(beta)+Nrr*r*abs(r)+(NBBr*beta+Nbrr*r)*beta*r
-    print(XH, YH, NH)
+    YH= YB*beta+Yr*rr+YBB*beta*abs(beta)+Yrr*rr*abs(rr)+(YBBr*beta+Ybrr*rr)*beta*rr
+    NH= NB*beta+Nr*rr+NBB*beta*abs(beta)+Nrr*rr*abs(rr)+(NBBr*beta+Nbrr*rr)*beta*rr
+    
+    return XH, YH, NH

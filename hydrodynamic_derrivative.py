@@ -1,7 +1,7 @@
+from added_mass_value import my, mm, mxx
+import math
 
-
-Cb= 1; L= 1; B= 1; d= 1; my= 1; U= 1; r= 1
-m= 1; mm= 1; beta= 1
+Cb= 0.5717; L= 3; B= 0.435; d= 0.1629
 
 #   X_axis====================================================================
 #   Xo=  hambatan total thdp kecepatan kapal
@@ -12,8 +12,8 @@ Xvvvv= -6.68*Cb/(L/B)+1.1
 #print(Xvv, Xvr, Xrr, Xvvvv)
 
 #   Y_axis====================================================================
-YB= (3.14*d/L)+1.4*Cb*B/L
-Yr= m+mm-1.5*Cb*B/L  #nilai m & mm dipanggil dari added mass value
+YB= (math.pi*d/L)+1.4*Cb*B/L
+Yr= mm+mxx-1.5*Cb*B/L  
 YBB= 2.5*d*(1-Cb)/B+0.5
 Yrr= 0.343*d*Cb/B-0.07
 YBBr= 1.5*d*Cb/B-0.65
