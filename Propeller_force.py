@@ -1,10 +1,15 @@
 import math
+import openpyxl
 
-L= 3
-Cb= 0.435
-d= 0.1629
-n= 1; Dp= 0.11144
-C1= 0.5094; C2= -0.31857; C3= -0.14286 #inputan user
+wb = openpyxl.load_workbook("input.xlsx",)
+sheet = wb.active
+
+L= sheet['B4'].value
+Cb= sheet['B3'].value
+d= sheet['B6'].value
+n= sheet['B9'].value
+Dp= sheet['B10'].value
+C1= sheet['B18'].value; C2= sheet['B19'].value; C3= sheet['B20'].value #inputan user
 
 
 def propeller(var):

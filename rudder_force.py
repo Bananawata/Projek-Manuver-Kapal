@@ -1,12 +1,15 @@
 import math
+import openpyxl
 
+wb = openpyxl.load_workbook("input.xlsx",)
+sheet = wb.active
 
-Wr0= 0.622; delta= 10; gamma= 0.332; P= 0.1175 # inputan user
-L= 3
-Cb= 0.435
-d= 0.1629
-Dp= 0.11144
-hr= 0.132; Ar= 0.0078433
+Wr0= sheet['B21'].value; delta= sheet['B22'].value; gamma= sheet['B23'].value; P= sheet['B24'].value # inputan user
+L= sheet['B4'].value
+Cb= sheet['B3'].value
+d= sheet['B6'].value
+Dp= sheet['B10'].value
+hr= sheet['B15'].value; Ar= sheet['B13'].value
 
 xhh = 9.72289*pow(Cb,2)-8.243538*Cb-0.00498539
 if xhh > -0.45:

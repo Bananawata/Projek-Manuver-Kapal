@@ -1,7 +1,14 @@
 from added_mass_value import my, mm, mxx
 import math
+import openpyxl
 
-Cb= 0.5717; L= 3; B= 0.435; d= 0.1629
+wb = openpyxl.load_workbook("input.xlsx",)
+sheet = wb.active
+
+Cb= sheet['B3'].value
+L= sheet['B4'].value
+B= sheet['B5'].value
+d= sheet['B6'].value
 
 #   X_axis====================================================================
 #   Xo=  hambatan total thdp kecepatan kapal
