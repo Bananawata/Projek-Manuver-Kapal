@@ -35,7 +35,7 @@ C3 = float(input("C3: "))
 Wr0 = float(input("Wr0: "))
 delta = float(input("delta: "))
 gamma = float(input("gamma: "))
-P = float(input("P: "))
+P = float(input("P: ")) # apakah ini propeller pitch
 
 # ADDED MASS VALUE
 mx = m * 0.05
